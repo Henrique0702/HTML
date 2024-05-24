@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+   <head><title>Uso de Canvas</title>  
+     <script>
+	  function criar(){
+	     var c = document.getElementById("area1");
+		 var controle = c.getContext("2d");
+		 controle.beginPath();
+		 controle.rect(20,   20,    150,   100);
+		 controle.fillStyle = "red";
+		 controle.fill();
+
+
+		 controle.beginPath();
+		 controle.rect(220,   220,   150,   100);
+		 controle.fillStyle = "#00FF00";
+		 controle.fill();
+	  }
+</script>
+   </head>
+   <body onLoad="criar()">
+   <canvas width="500" height="500" id="area1">
+	  seu browser não suporta html  5
+	</canvas>
+	<h1> agora a criação de retângulos</h1>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link href="estiloform.css" rel="stylesheet" type="text/css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pest Shop</title>
+</head>
+<body>
+    <h1>Cadastro dos Animais de estimação</h1>
+    <form id="frmcad">
+        <p>Nome do responsável do pet: &nbsp; &nbsp;
+            <input type="text" id="txtnome" size="40" maxlength="38" />   </p>
+                <p>digite o nome ou apelido do PET: &nbsp; &nbsp;
+                    <input type="text" id="txtnome" size="30" maxlength="35" />   </p>
+                    <p>Endereço:
+                    <input type="text" id="txtnome" size="40" maxlength="38" />   </p>   
+                    </p>
+                <p>Sexo:
+                 <input type="radio" id="radsex1" name="sexo" checked="checked" />  macho
+                 <input type="radio" id="radsex2" name="sexo" /> fêmea
+                 <input type="radio" id="radsex3" name="sexo" /> outros
+                </p>
+               <p>Situação:
+               <input type="checkbox" id="chkemp" value="1" />  filhote
+               <input type="checkbox" id="chkcas" value="1" />  castrado
+               <input type="checkbox" id="chkest" value="1" />  pedgree 
+               <input type="checkbox" id="chkest" value="1" />  vacinado
+            </p>
+            <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                 Assinale o tipo de PET:
+                <select id="lstper">
+                   <option value="c" select="selected"> cachorro </option>
+                   <option value="g"> gato </option>
+                   <option value="a"> ave </option>
+                   <option value="r"> roedor </option>
+                   <option value="l"> lagarto</option>
+                   <option value="p"> peixe </option>
+                   <option value="o"> outros </option>
+                </select>    
+              </p>
+                <p>
+                    <input type="reset" value="limpar tudo" />
+                    <input type="submit" value=" confirma o cadastro do pet " />
+                    <input type="button" />
+                 </p>
+    </form>
+</body>
+</html>

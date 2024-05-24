@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <style type="text/css" >
+        input{border-style:solid ;border-color: #0000ff;
+        border-radius: 5px;
+        box-shadow: 3px 3px blue }
+        #texto{background-color: #0000ff;color:rgba(0, 0, 0, 0.3) }
+    </style>
+    <script type="text/javascript">
+        function exibir(){
+            window.alert("boa tarde");
+        }
+        function exibir1(){
+            window.alert("clicou");
+        }
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="estiloform.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body onload="exibir()">
+    <form id="frmcad" action="processa.html" method="get"></form>
+    <h1>Cadastro do Aluno</h1>
+        <p>Nome: &nbsp; &nbsp;
+            <input type="text" id="txtnome" size="40" class="fundo" maxlength="38" />   </p>
+            <p id="texto2">
+                Endereço: <input type="text" id="txtender" size="60" maxlength="58"  />  </p>
+                <p>Sexo:
+                 <input type="radio" id="radsex1" name="sexo" checked="checked" />  masculino
+                 <input type="radio" id="radsex2" name="sexo" /> feminino
+                </p>
+               <p>Situação:
+               <input type="checkbox" id="chkemp" value="1" />  empregado
+               <input type="checkbox" id="chkcas" value="1" />  casado
+               <input type="checkbox" id="chkest" value="1" />  estudante    </p>
+            <p> Periodo:
+                <select id="lstper">
+                   <option value="m"> manhã </option>
+                   <option selected="selected" value="t"> tarde </option>
+                   <option value="n" > noite </option>
+                </select>    
+              </p>
+            <p>Observação:
+                <textarea id="txtobs" rows="5" cols="50" >
+                </textarea> </p>
+                <p>
+                    <input type="reset" value="limpar" />
+                    <input type="submit" value=" confirma o cadastro " />
+                    <input type="button" value="Mensagem" onclick="exibir1()" />
+                 </p>
+    </form>
+</body>
+</html>
